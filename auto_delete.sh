@@ -1,6 +1,6 @@
 #!/bin/bash
 prev_count=0
-fpath=/home/ayyappan/Documents
+fpath=/home/ubuntu/audio
 find $fpath -type d -mtime +1 -exec ls -ltrh {} \; > /tmp/folder.out
 find $fpath -type d -mtime +1 -exec rm -rf {} \;
 count=$(cat /tmp/folder.out | wc -l)
